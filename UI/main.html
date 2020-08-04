@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todayworkwork</title>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+    *{margin:0; padding:0; 
+    /* border: 1px solid black; */
+    }
+    li{list-style: none;}
+    #header{ width: 100%; height: 200px; margin-bottom: 20px;}
+    #title{overflow: hidden; padding: 2%;}
+    .parent{overflow:hidden;} .left{ float:left;} .right{float:right;}
+    #nav{ padding: 10px; background-color: rgb(145, 168, 209); color:white;}
+    #nav > #indiv_menu > li{float:left; margin-right: 10px;}
+    #nav > #com_menu > li {float:left; margin-left: 10px; margin-right: 10px; }    
+</style>
+<style>
+    #new_recruit{ width:750px; height:300px; margin-right: 20px;}
+    #new_recruit > div{
+        float:left;
+        width:250px; height:150px;
+        border: 1px solid black;
+    }
+    #wrap_login{ width:370px; height: 300px; background-color: #fbfbfb; position: relative;}
+    #choice_login > input { display:none;}
+    #choice_login > label{float:left; width: 50%; padding:20px; text-align: center;}
+    #text{width:70%; height:60px;}
+    #text > input{width: 100%; height:30px;}
+    #button {width:30%;} #button>button{width:100%; height:60px;}
+
+    #hot_recruit{position:relative;}
+    #hot_recruit > div{float:left; border: 1px solid black; margin: 10px; width:23%; height: 200px;}
+
+    #imminent_recruit{position:relative;}
+    #imminent_recruit > div{float:left; border: 1px solid black; margin: 10px; width:23%; height: 200px;}
+</style>
+<style>
+    #footer{ width:100%; height: 350px; padding: 5%; background-color: #fbfbfb;}
+    #footer> #footer_logo{margin-bottom: 20px;}
+    #footer > #info{margin-bottom: 30px;}
+    #footer> #info>div{margin-left: 30px; margin-bottom: 10px;}
+</style>
+</head>
+<body>
+    <div class="container">
+        <div id="header">
+            <div id="title">
+                <div class="parent left">
+                    <img class="left" src="http://placehold.it/100x100"/>
+                    <h1 class="left">오늘부터일일</h1>
+                </div>
+                <div class="right">
+                    <h1>어떤 채용정보를 찾으시나요?</h1>
+                </div>
+            </div>
+            <div id="nav" class="parent">
+                <ul id="indiv_menu" class="parent left">
+                    <li>전체공고</li>
+                    <li>기업정보</li>
+                    <li>이력서관리</li>
+                    <li>후기</li>
+                </ul>
+                <div class="left">/</div>
+                <ul id="com_menu" class="parent left">
+                    <li>인재정보</li>
+                </ul>
+                <div class="right">
+                    <input type="text" value="검색">
+
+                </div>
+            </div>
+        </div>
+        <div id="content">
+            <div id="top_content" class="parent">
+                <div id="new_recruit" class="parent left">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div id="wrap_login" class="left">
+                    <div id="choice_login" class="parent">
+                        <label for="indiv_radio">개인</label>
+                        <input type="radio" id="indiv_radio" name="chk_login" value="개인" />
+                        <label for="com_radio">기업</label>
+                        <input type="radio" id="com_radio" name="chk_login" value="기업" />
+                    </div>
+                    <div id="input_login" class="parent">
+                        <div id="text" class="left">
+                            <input type="text" name="id" value="아이디"/>
+                            <input type="password" name="pw" value="비밀번호"/>
+                        </div>
+                        <div id="button" class="left">
+                            <button>login</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           <div id="hot_recruit" class="parent">
+               <h1>많이 찾는 공고</h1>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+
+           </div>
+           <div id="imminent_recruit" class="parent">
+                <h1>기한이 임박한 공고</h1>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+           </div>
+        </div>
+        <div id="footer">
+            <div id="footer_logo" class="parent">
+                <img class="left" src="http://placehold.it/100x100">
+                <h3 class="left">오늘부터일일</h3>
+            </div>
+            <div id="info">
+                <div>고객센터 010-2600-7226 (평일 09:00~18:00, 주말·공휴일 휴무)</div>
+                <div>이메일 : kk0141@naver.com  Fax : 053-751-7761(대표), 02-6937-0035(세금계산서)</div>
+                <div>(주)오늘부터일일, 우 : 412-28, 대구광역시 동구 동부로 121 (신천동,경북산업직업전문학교), 대표 : 권희경</div>
+                <div>사업자번호 : 502-91-09709, 통신판매업신고번호 : 동구청 제2-844호, Copyright (c) (주)오늘부터일일. All rights reserved.</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
