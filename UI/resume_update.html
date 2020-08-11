@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        *{margin:0; padding:0; 
+        /* border: 1px solid black; */
+        }
+        li{list-style: none;}
+        #header{ width: 100%; height: 200px; margin-bottom: 20px;}
+        #title{overflow: hidden; padding: 2%;}
+        .parent{overflow:hidden;} .left{ float:left;} .right{float:right;}
+        #nav{ padding: 10px; background-color: rgb(145, 168, 209); color:white;}
+        #nav > #indiv_menu > li{float:left; margin-right: 10px;}
+        #nav > #com_menu > li {float:left; margin-left: 10px; margin-right: 10px; }    
+    </style>
+    <style>
+        #content{padding: 80px 20px; width:100%;}
+        #content > #content_wrap > #aside{
+            width:150px;
+            margin-right: 30px;
+            overflow: hidden;
+        }
+        #content_wrap > #section{width: 800px;}
+        #top_section_wrap > img{margin-right: 30px;}
+        #top_section_wrap > .info{ width:635px; }
+        .info > li{
+            overflow: hidden;
+            border-bottom: 1px solid lightgray;
+            margin-bottom: 10px;
+        }
+        .info > li > h3{ float: left; margin-right: 30px; width:100px;}
+        .info > li > input{float: left; width:660px;}
+        #top_section_wrap > .info > li > input{width: 500px;}
+        .info > #introduce{ border:none;}
+        .info > #introduce + textarea{ width: 100%; height: 300px; border: 1px solid lightgray;}
+
+        #back > input{ width: 100px; height:100px;}
+    </style>
+    <style>
+        #footer{ width:100%; height: 350px; padding: 5%; background-color: #fbfbfb;}
+        #footer> #footer_logo{margin-bottom: 20px;}
+        #footer > #info{margin-bottom: 30px;}
+        #footer> #info>div{margin-left: 30px; margin-bottom: 10px;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="header">
+            <div id="title">
+                <div class="parent left">
+                    <img class="left" src="http://placehold.it/100x100"/>
+                    <h1 class="left">오늘부터일일</h1>
+                </div>
+                
+            </div>
+            <div id="nav" class="parent">
+                <ul id="indiv_menu" class="parent left">
+                    <li>전체공고</li>
+                    <li>기업정보</li>
+                    <li>이력서관리</li>
+                    <li>후기</li>
+                </ul>
+                <div class="left">/</div>
+                <ul id="com_menu" class="parent left">
+                    <li>인재정보</li>
+                </ul>
+                <div class="right">
+                    <input type="text" value="검색">
+
+                </div>
+            </div>
+        </div>
+        <div id="content">
+            <div id="content_wrap" class="parent">
+                <div id="aside" class="left">
+                    <h3>이력서 관리</h2>
+                    <ul>
+                        <li>이력서 등록</li>
+                        <li>이력서 현황</li>
+                    </ul>
+                </div>
+                <div id="section" class="left">
+                    <div id="top_section_wrap" class="parent">
+                        <img src="http://placehold.it/130x180" class="left">
+                        <ul class="left info">
+                            <li><h3>휴대폰</h3><input type="text"></li>
+                            <li><h3>이메일</h3><input type="text"></li>
+                            <li><h3>주소</h3><input type="text"></li>
+                        </ul>
+                    </div>
+                    
+                    <ul class="info">
+                        <li><h3>희망지역</h3><input type="text"></li>
+                        <li><h3>경력</h3><input type="text"></li>
+                        <li><h3>자격증</h3><input type="text"></li>
+                        <div></div>
+                        <li id="introduce"><h3>자기소개</h3></li>
+                        <textarea></textarea>
+                        
+                    </ul>
+                </div>
+                <div id="back">
+                    <input type="button" value="수정"/>
+                </div>
+        </div>
+        <div id="footer">
+            <div id="footer_logo" class="parent">
+                <img class="left" src="http://placehold.it/100x100">
+                <h3 class="left">오늘부터일일</h3>
+            </div>
+            <div id="info">
+                <div>고객센터 010-2600-7226 (평일 09:00~18:00, 주말·공휴일 휴무)</div>
+                <div>이메일 : kk0141@naver.com  Fax : 053-751-7761(대표), 02-6937-0035(세금계산서)</div>
+                <div>(주)오늘부터일일, 우 : 412-28, 대구광역시 동구 동부로 121 (신천동,경북산업직업전문학교), 대표 : 권희경</div>
+                <div>사업자번호 : 502-91-09709, 통신판매업신고번호 : 동구청 제2-844호, Copyright (c) (주)오늘부터일일. All rights reserved.</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
