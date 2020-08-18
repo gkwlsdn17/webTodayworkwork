@@ -2,8 +2,8 @@ package com.hk.todayworkwork.value;
 
 public class CVALUES {
 
-	public static String sqlClass="com.microsoft.sqlserver.jdbc.SQLServerDriver";
-	public static String sqlUrl="jdbc:sqlserver://192.168.0.200:1433;databasename=TodayWorkWork";
-	public static String sqlUser="sa";
-	public static String sqlPass="8765432!";
+	public static String sqlClass="com.mysql.jdbc.Driver";
+	public static String sqlUrl="jdbc:mysql://15.165.57.130/todayworkwork";
+	public static String sqlUser="root";
+	public static String sqlPass="gkwlsdn17";
 }

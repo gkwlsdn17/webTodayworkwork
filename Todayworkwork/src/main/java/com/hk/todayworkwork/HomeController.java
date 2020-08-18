@@ -75,6 +75,11 @@ public class HomeController {
 		
 		return "loginProc";
 	}
+	@RequestMapping(value = "/signUp", method = RequestMethod.GET)
+	public String signUp(Locale locale, Model model, HttpServletRequest request) {
+		
+		return "signUp";
+	}
 	@RequestMapping(value = "/resumeManagement", method = RequestMethod.GET)
 	public String resumeManagement(Locale locale, Model model, HttpServletRequest request) {
 		

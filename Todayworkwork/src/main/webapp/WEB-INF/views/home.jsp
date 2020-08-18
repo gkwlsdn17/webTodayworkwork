@@ -70,6 +70,13 @@
 	                            <input type="submit" value="login">
 	                        </div>
 	                    </div>
+	                    <div id="submenu_login">
+	                    	<ul class="parent">
+	                    		<li class="left"><a href="signUp">회원가입</a></li>
+	                    		<li class="left"><a href="findId">아이디찾기</a></li>
+	                    		<li class="left"><a href="findPw">비밀번호찾기</a></li>
+	                    	</ul>
+	                    </div>
 	                </div>
                 </form>
             </div>
