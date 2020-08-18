@@ -5,15 +5,7 @@
 <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Home</title>
-	    <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-<script type="text/javascript">
-	
-</script>
+
 <!-- header css -->
 <%@ include file="../resources/cssjs/head.jsp" %>
 <!-- content css -->
@@ -27,7 +19,7 @@
             <div id="title">
                 <div class="parent left">
                     <img class="left" src="http://placehold.it/100x100"/>
-                    <h1 class="left">오늘부터일일</h1>
+                    <h1 class="left"><a href="/todayworkwork">오늘부터일일</a></h1>
                 </div>
                 <div class="right">
                     <h1>세상 모든이들의 일자리</h1>
@@ -35,9 +27,9 @@
             </div>
             <div id="nav" class="parent">
                 <ul id="indiv_menu" class="parent left">
-                    <li>전체공고</li>
-                    <li>기업정보</li>
-                    <li>이력서관리</li>
+                    <li><a href="#">전체공고</a></li>
+                    <li><a href="#">기업정보</a></li>
+                    <li><a href="resumeManagement">이력서관리</a></li>
                     <li>후기</li>
                 </ul>
                 <div class="left">/</div>

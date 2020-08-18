@@ -11,7 +11,8 @@
     		select * from RECRUIT order by A_COUNT DESC;
     	</select>
     	<select id="selectImminent_list" resultType="com.hk.todayworkwork.dto.RecruitDTO">
-    		select * from RECRUIT where DATEDIFF(DD,GETDATE(),PERIOD)>-1 order by DATEDIFF(DD,GETDATE(),PERIOD);
+    		select * from RECRUIT;
+<!--     		select * from RECRUIT where DATEDIFF(DD,GETDATE(),PERIOD)>-1 order by DATEDIFF(DD,GETDATE(),PERIOD); -->
     	</select>
 <!--     	<update id="updateaa" parameterType="com.mh.simple01.dto.AADto"> -->
 <!--     		update aa set bb=#{bb} -->

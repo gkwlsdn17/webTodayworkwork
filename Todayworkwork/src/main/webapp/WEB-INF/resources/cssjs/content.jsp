@@ -1,4 +1,4 @@
-<%@ page contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
+
 <style>
     #new_recruit{ width:750px; height:300px; margin-right: 20px;}
     #new_recruit > div{

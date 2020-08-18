@@ -75,4 +75,23 @@ public class HomeController {
 		
 		return "loginProc";
 	}
+	@RequestMapping(value = "/resumeManagement", method = RequestMethod.GET)
+	public String resumeManagement(Locale locale, Model model, HttpServletRequest request) {
+		
+		
+		return "resumeManagement";
+	}
+	@RequestMapping(value = "/resumeDetail", method = RequestMethod.GET)
+	public String resumeDetail(Locale locale, Model model, HttpServletRequest request) {
+		String r_num = request.getParameter("r_num");
+//		int r_num = Integer.parseInt(request.getParameter("r_num"));
+		System.out.println("r_num="+r_num);
+		model.addAttribute("r_num",r_num);
+		return "resumeDetail";
+	}
+	@RequestMapping(value = "/resumeInsert", method = RequestMethod.GET)
+	public String resumeInsert(Locale locale, Model model, HttpServletRequest request) {
+		
+		return "resumeInsert";
+	}
 }
