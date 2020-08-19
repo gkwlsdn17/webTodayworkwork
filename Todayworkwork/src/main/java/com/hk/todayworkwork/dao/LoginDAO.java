@@ -45,5 +45,15 @@ public class LoginDAO {
 		}
 	}
 
+	public void signUpCustomer(String id, String pw, String name, String tel, String addr, String email) {
+		CustomerDTO dto = new CustomerDTO(id,pw,name,addr,email,tel);
+		sqlSession.insert("login.insertCustomer",dto);
+		
+	}
+	public void signUpCom_Customer(String id, String pw, String name, String tel, String addr, String email,String com_name,String com_num,String com_addr,String com_tel) {
+		Com_customerDTO dto = new Com_customerDTO(id,pw,name,addr,com_name,com_addr,com_num,tel,com_tel,email);
+		sqlSession.insert("login.insertCom_Customer",dto);
+		
+	}
 	
 }

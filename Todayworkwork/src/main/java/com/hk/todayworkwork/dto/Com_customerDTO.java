@@ -12,6 +12,21 @@ public class Com_customerDTO {
 	private String PHONE;
 	private String COM_TEL;
 	private String EMAIL;
+	
+	public Com_customerDTO(String iD, String pW, String nAME, String aDDR, String cOM_NAME, String cOM_ADDR,
+			String cOM_NUM, String pHONE, String cOM_TEL, String eMAIL) {
+		super();
+		ID = iD;
+		PW = pW;
+		NAME = nAME;
+		ADDR = aDDR;
+		COM_NAME = cOM_NAME;
+		COM_ADDR = cOM_ADDR;
+		COM_NUM = cOM_NUM;
+		PHONE = pHONE;
+		COM_TEL = cOM_TEL;
+		EMAIL = eMAIL;
+	}
 	@Override
 	public String toString() {
 		return "Com_customerDTO [ID=" + ID + ", PW=" + PW + ", NAME=" + NAME + ", ADDR=" + ADDR + ", COM_NAME="

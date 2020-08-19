@@ -46,14 +46,7 @@ public class HomeController {
 		model.addAttribute("hot_list",hot_list);
 		List<RecruitDTO> imminent_list = recruitService.selectImminent();
 		model.addAttribute("imminent_list",imminent_list);
-//		logger.info("Welcome home! The client locale is {}.", locale);
-//		
-//		Date date = new Date();
-//		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
-//		
-//		String formattedDate = dateFormat.format(date);
-//		
-//		model.addAttribute("serverTime", formattedDate );
+
 		
 		return "home";
 	}
@@ -79,6 +72,29 @@ public class HomeController {
 	public String signUp(Locale locale, Model model, HttpServletRequest request) {
 		
 		return "signUp";
+	}
+	@RequestMapping(value = "/signUpProc", method = RequestMethod.GET)
+	public String signUpProc(Locale locale, Model model, HttpServletRequest request) {
+		String id = request.getParameter("id");
+		String pw = request.getParameter("pw");
+		String name = request.getParameter("name");
+		String tel = request.getParameter("tel");
+		String addr = request.getParameter("addr");
+		String email = request.getParameter("email");
+		String type = request.getParameter("type");
+		String com_name = request.getParameter("com_name");
+		String com_num = request.getParameter("com_num");
+		String com_addr = request.getParameter("com_addr");
+		String com_tel = request.getParameter("com_tel");
+		if(type.equals("customer")) {
+			loginService.signUpCustomer(id,pw,name,tel,addr,email);
+			
+		}
+		else if(type.equals("com_customer")) {
+			loginService.signUpCom_Customer(id,pw,name,tel,addr,email,com_name,com_num,com_addr,com_tel);
+		}
+		
+		return "home";
 	}
 	@RequestMapping(value = "/resumeManagement", method = RequestMethod.GET)
 	public String resumeManagement(Locale locale, Model model, HttpServletRequest request) {

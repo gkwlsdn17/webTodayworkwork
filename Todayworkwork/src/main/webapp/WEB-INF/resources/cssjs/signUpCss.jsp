@@ -6,4 +6,17 @@
 	#info > li > input{float:left; width:735px; line-height: 35px; margin-top:15px;}
 	#signup{width:100%;}
 	#signup:hover{ opacity: 70%;}
+	.com_info{ display:none; }
+	
 </style>
+<script>
+	$(document).ready(function(){
+	    
+	    $("#radio_com_customer").on("click",function(){
+	        $(".com_info").show();
+	    });
+	    $("#radio_customer").on("click",function(){
+	        $(".com_info").hide();
+	    });
+	});
+</script>

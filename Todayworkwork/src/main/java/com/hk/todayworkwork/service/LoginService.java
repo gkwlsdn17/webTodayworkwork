@@ -27,4 +27,12 @@ public class LoginService {
 		
 	}
 	
+	public void signUpCustomer(String id, String pw, String name, String tel, String addr, String email) {
+		loginDao.signUpCustomer(id, pw, name, tel, addr, email);
+	}
+	public void signUpCom_Customer(String id, String pw, String name, String tel, String addr, String email, String com_name, String com_num, String com_addr, String com_tel) {
+		loginDao.signUpCom_Customer(id, pw, name, tel, addr, email, com_name, com_num, com_addr, com_tel);
+		
+	}
+	
 }

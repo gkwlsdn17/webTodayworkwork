@@ -10,7 +10,12 @@
     	<select id="selectCom_customer" resultType="com.hk.todayworkwork.dto.Com_customerDTO" parameterType="com.hk.todayworkwork.dto.Com_customerDTO"> 
     		select * from COM_CUSTOMER where ID = #{id}
     	</select>
-    	
+    	<insert id="insertCustomer" parameterType="com.hk.todayworkwork.dto.CustomerDTO">
+    		insert into CUSTOMER values(#{ID}, #{PW}, #{NAME}, #{ADDR}, #{EMAIL}, #{PHONE})
+    	</insert>
+    	<insert id="insertCom_Customer" parameterType="com.hk.todayworkwork.dto.Com_customerDTO">
+    		insert into COM_CUSTOMER values(#{ID}, #{PW}, #{NAME}, #{ADDR}, #{COM_NAME}, #{COM_ADDR}, #{COM_NUM}, #{PHONE}, #{COM_TEL}, #{EMAIL} )
+    	</insert>
 <!--     	<update id="updateaa" parameterType="com.mh.simple01.dto.AADto"> -->
 <!--     		update aa set bb=#{bb} -->
 <!--     	</update> -->

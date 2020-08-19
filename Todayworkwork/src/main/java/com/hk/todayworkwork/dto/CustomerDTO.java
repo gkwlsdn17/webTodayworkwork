@@ -8,6 +8,16 @@ public class CustomerDTO {
 	private String ADDR;
 	private String EMAIL;
 	private String PHONE;
+	
+	public CustomerDTO(String iD, String pW, String nAME, String aDDR, String eMAIL, String pHONE) {
+		super();
+		ID = iD;
+		PW = pW;
+		NAME = nAME;
+		ADDR = aDDR;
+		EMAIL = eMAIL;
+		PHONE = pHONE;
+	}
 	@Override
 	public String toString() {
 		return "CustomerDTO [ID=" + ID + ", PW=" + PW + ", NAME=" + NAME + ", ADDR=" + ADDR + ", EMAIL=" + EMAIL
