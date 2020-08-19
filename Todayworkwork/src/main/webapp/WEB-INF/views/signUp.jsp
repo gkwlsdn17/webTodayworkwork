@@ -15,20 +15,25 @@
 <script type="text/javascript">
 	$(document).ready(function(){
 		$("#signup").on("click",function(){
-			var id = $("#id").val();
+			var user_id = $("#id").val();
 			
 			$.ajax({
-				url: "signUpCheck.jsp",
+				url: "signUpCheck",
 				type: "post",
+				data:{id: user_id},
 				success: function(result){ 
-					if(result=="1"){
+					alert(result);
+					if(result=="success"){
 						alert("회원가입에 성공하였습니다 로그인 해주세요");
 					}
 					else{
 						alert("중복된 아이디가 있습니다.");
 					}
 				},
-				error:function(){ alert("회원가입에 실패했습니다"); }
+				error:function(e){ 
+					alert("회원가입에 실패했습니다"+e);
+					alert("code:"+e.status+"\n"+"message:"+e.responseText+"\n"+"error:"+e);
+				}
 			});
 		});
 	});
